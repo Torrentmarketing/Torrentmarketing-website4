@@ -5,8 +5,10 @@
   --font-sans: "DM Sans", ui-sans-serif, system-ui, sans-serif;
   --font-display: "Syne", sans-serif;
   
-  --color-pharma-blue: #0A1F8F;
-  --color-pharma-accent: #F27D26;
+  --color-navy: #1A1A5E;
+  --color-teal: #00A878;
+  --color-light-bg: #F4F8F6;
+  --color-white: #FFFFFF;
 
   @keyframes spin-slow {
     from { transform: translate(-50%, -50%) rotate(0deg); }
@@ -22,22 +24,23 @@
 
 body {
   font-family: var(--font-body-family);
-  background-color: #f8fafc;
-  color: #1e293b;
+  background-color: var(--color-light-bg);
+  color: var(--color-navy);
 }
 
 h1, h2, h3, h4, h5, h6 {
   font-family: var(--font-heading-family);
+  color: var(--color-navy);
 }
 
 .gradient-text {
-  background: linear-gradient(to right, #F27D26, #FFD200, #4CAF50, #0A1F8F);
+  background: linear-gradient(to right, var(--color-navy), var(--color-teal));
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
 .gradient-bg {
-  background: linear-gradient(135deg, #0A1F8F 0%, #1e3a8a 100%);
+  background: linear-gradient(135deg, var(--color-navy) 0%, #252575 100%);
 }
 
 .glass-card {

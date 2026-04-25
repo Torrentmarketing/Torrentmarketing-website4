@@ -42,7 +42,7 @@ export function HeroSection() {
                     <Button
                         variant="solid"
                         size="lg"
-                        className="rounded-full px-8 text-base bg-pharma-blue hover:bg-pharma-blue/90 text-white border-none shadow-[0_0_20px_rgba(10,31,143,0.3)]">
+                        className="rounded-full px-8 text-base bg-navy hover:bg-navy/90 text-white border-none shadow-[0_0_20px_rgba(26,26,94,0.3)]">
                         <a href={WHATSAPP_LINK} target="_blank" rel="noopener noreferrer" className="flex items-center gap-2">
                             <span className="text-nowrap flex items-center gap-2 font-bold">Start Growing <ArrowRight className="size-4" /></span>
                         </a>
@@ -64,14 +64,14 @@ export function HeroSection() {
                         <h2 className="text-2xl font-display font-bold text-white/80">Meet Our Successful Partners</h2>
                     </div>
                     <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-8 gap-8 items-center justify-items-center opacity-70 hover:opacity-100 transition-opacity">
-                        <div className="text-white/60 font-display font-bold text-sm hover:text-pharma-accent transition-colors text-center">PFE Pharma</div>
-                        <div className="text-white/60 font-display font-bold text-sm hover:text-pharma-accent transition-colors text-center">PERK Pharma</div>
-                        <div className="text-white/60 font-display font-bold text-sm hover:text-pharma-accent transition-colors text-center">Crescent Pharma</div>
-                        <div className="text-white/60 font-display font-bold text-sm hover:text-pharma-accent transition-colors text-center">Shaafi Pharma</div>
-                        <div className="text-white/60 font-display font-bold text-sm hover:text-pharma-accent transition-colors text-center">Zain Pharma</div>
-                        <div className="text-white/60 font-display font-bold text-sm hover:text-pharma-accent transition-colors text-center">Caliph Pharma</div>
-                        <div className="text-white/60 font-display font-bold text-sm hover:text-pharma-accent transition-colors text-center">Delta Pharma</div>
-                        <div className="text-white/60 font-display font-bold text-sm hover:text-pharma-accent transition-colors text-center">Shazal's Pharma</div>
+                        <div className="text-white/60 font-display font-bold text-sm hover:text-teal transition-colors text-center">PFE Pharma</div>
+                        <div className="text-white/60 font-display font-bold text-sm hover:text-teal transition-colors text-center">PERK Pharma</div>
+                        <div className="text-white/60 font-display font-bold text-sm hover:text-teal transition-colors text-center">Crescent Pharma</div>
+                        <div className="text-white/60 font-display font-bold text-sm hover:text-teal transition-colors text-center">Shaafi Pharma</div>
+                        <div className="text-white/60 font-display font-bold text-sm hover:text-teal transition-colors text-center">Zain Pharma</div>
+                        <div className="text-white/60 font-display font-bold text-sm hover:text-teal transition-colors text-center">Caliph Pharma</div>
+                        <div className="text-white/60 font-display font-bold text-sm hover:text-teal transition-colors text-center">Delta Pharma</div>
+                        <div className="text-white/60 font-display font-bold text-sm hover:text-teal transition-colors text-center">Shazal's Pharma</div>
                     </div>
                 </div>
             </section>
@@ -128,7 +128,7 @@ export const HeroHeader = () => {
                                     <li key={index}>
                                         <a
                                             href={item.href}
-                                            className="text-slate-600 hover:text-pharma-blue block duration-150 font-medium">
+                                            className="text-slate-600 hover:text-navy block duration-150 font-medium">
                                             <span>{item.name}</span>
                                         </a>
                                     </li>
@@ -143,7 +143,7 @@ export const HeroHeader = () => {
                                         <li key={index}>
                                             <a
                                                 href={item.href}
-                                                className="text-slate-600 hover:text-pharma-blue block duration-150 font-medium">
+                                                className="text-slate-600 hover:text-navy block duration-150 font-medium">
                                                 <span>{item.name}</span>
                                             </a>
                                         </li>
@@ -154,7 +154,7 @@ export const HeroHeader = () => {
                                 <Button
                                     variant="solid"
                                     size="sm"
-                                    className={cn("bg-pharma-blue text-white hover:bg-pharma-blue/90", isScrolled ? 'lg:inline-flex' : 'hidden')}>
+                                    className={cn("bg-navy text-white hover:bg-navy/90", isScrolled ? 'lg:inline-flex' : 'hidden')}>
                                     <a href={WHATSAPP_LINK} target="_blank" rel="noopener noreferrer">
                                         <span>Get Started</span>
                                     </a>
@@ -163,7 +163,7 @@ export const HeroHeader = () => {
                                      <Button
                                         variant="solid"
                                         size="sm"
-                                        className="bg-pharma-blue text-white hover:bg-pharma-blue/90">
+                                        className="bg-navy text-white hover:bg-navy/90">
                                         <a href={WHATSAPP_LINK} target="_blank" rel="noopener noreferrer">
                                             <span>Contact Us</span>
                                         </a>

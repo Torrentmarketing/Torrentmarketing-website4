@@ -10,10 +10,10 @@ const WHATSAPP_NUMBER = "923065904574";
 const WHATSAPP_LINK = `https://wa.me/${WHATSAPP_NUMBER}?text=Hi%20Torrent%20Pharma,%20I%20want%20to%20discuss%20pharma%20expansion%20opportunities.`;
 
 const UserPaths = () => (
-  <section className="py-20 bg-slate-50">
+  <section className="py-20 bg-light-bg">
     <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <div className="text-center mb-16">
-        <h2 className="text-4xl font-display font-bold text-slate-900 mb-4">Choose Your Path</h2>
+        <h2 className="text-4xl font-display font-bold text-navy mb-4">Choose Your Path</h2>
         <p className="text-slate-600 max-w-2xl mx-auto">Whether you are a manufacturer looking to expand or a professional looking for a franchise, we have the right opportunity for you.</p>
       </div>
       <div className="grid md:grid-cols-2 gap-8">
@@ -25,7 +25,7 @@ const UserPaths = () => (
           <div className="absolute top-0 right-0 p-8 opacity-10 group-hover:opacity-20 transition-opacity">
             <BarChart3 size={120} />
           </div>
-          <h3 className="text-2xl font-display font-bold text-pharma-blue mb-4">For Companies</h3>
+          <h3 className="text-2xl font-display font-bold text-navy mb-4">For Companies</h3>
           <p className="text-slate-600 mb-6">Pharmaceutical Manufacturers looking to fill uncovered territories and find serious distributors across Pakistan.</p>
           <ul className="space-y-3 mb-8">
             <li className="flex items-center gap-2 text-sm text-slate-700"><CheckCircle2 className="w-4 h-4 text-green-500" /> City-wise franchise availability ads</li>
@@ -34,7 +34,7 @@ const UserPaths = () => (
           </ul>
           <Button 
             variant="solid"
-            className="inline-flex items-center gap-2 bg-pharma-blue text-white px-6 py-3 rounded-xl font-bold hover:shadow-lg transition-all border-none"
+            className="inline-flex items-center gap-2 bg-navy text-white px-6 py-3 rounded-xl font-bold hover:shadow-lg transition-all border-none"
             onClick={() => window.open('/proposal.pdf', '_blank')}
           >
             Expand My Company <FileText className="w-4 h-4" />
@@ -49,7 +49,7 @@ const UserPaths = () => (
           <div className="absolute top-0 right-0 p-8 opacity-10 group-hover:opacity-20 transition-opacity">
             <Users size={120} />
           </div>
-          <h3 className="text-2xl font-display font-bold text-pharma-accent mb-4">For Franchisers</h3>
+          <h3 className="text-2xl font-display font-bold text-teal mb-4">For Franchisers</h3>
           <p className="text-slate-600 mb-6">Entrepreneurs and Medical Store owners looking for high-margin pharma franchise opportunities in their city.</p>
           <ul className="space-y-3 mb-8">
             <li className="flex items-center gap-2 text-sm text-slate-700"><CheckCircle2 className="w-4 h-4 text-pharma-accent" /> Connect with top manufacturers</li>
@@ -58,7 +58,7 @@ const UserPaths = () => (
           </ul>
           <Button 
             variant="solid"
-            className="inline-flex items-center gap-2 bg-pharma-accent text-white px-6 py-3 rounded-xl font-bold hover:shadow-lg transition-all border-none"
+            className="inline-flex items-center gap-2 bg-teal text-white px-6 py-3 rounded-xl font-bold hover:shadow-lg transition-all border-none"
             onClick={() => window.open(WHATSAPP_LINK, '_blank')}
           >
             Find a Franchise <ArrowRight className="w-4 h-4" />
@@ -75,25 +75,25 @@ const Services = () => {
       title: "Franchise Lead Gen",
       desc: "Hum aapke liye serious distributors aur franchisers dhoondtay hain jo invest karne ke liye tayyar hon.",
       icon: <Users className="w-8 h-8" />,
-      color: "bg-blue-50 text-blue-600"
+      color: "bg-navy/10 text-navy"
     },
     {
       title: "Territory Marketing",
       desc: "Specific cities (Lahore, Karachi, Multan, etc.) mein targeted ads chala kar wahan ke distributors ko target karein.",
       icon: <MapPin className="w-8 h-8" />,
-      color: "bg-orange-50 text-orange-600"
+      color: "bg-teal/10 text-teal"
     },
     {
       title: "WhatsApp Conversion",
       desc: "Sirf leads nahi, sales. Hum aapka WhatsApp system set up karte hain taake har query customer mein badle.",
       icon: <MessageCircle className="w-8 h-8" />,
-      color: "bg-green-50 text-green-600"
+      color: "bg-navy/10 text-navy"
     },
     {
       title: "Expansion Strategy",
       desc: "New product launch ho ya purana brand expand karna ho, hamari strategy aapko results degi.",
       icon: <BarChart3 className="w-8 h-8" />,
-      color: "bg-purple-50 text-purple-600"
+      color: "bg-teal/10 text-teal"
     }
   ];
 
@@ -101,7 +101,7 @@ const Services = () => {
     <section id="services" className="py-24 bg-white">
       <div className="max-w-7xl mx-auto px-4">
         <div className="text-center mb-16">
-          <h2 className="text-4xl lg:text-5xl font-display font-bold text-slate-900 mb-4">Our Core Expertise</h2>
+          <h2 className="text-4xl lg:text-5xl font-display font-bold text-navy mb-4">Our Core Expertise</h2>
           <p className="text-slate-600 max-w-2xl mx-auto text-lg">
             Pharma marketing is different. Generic agencies don't understand your business. We do.
           </p>
@@ -136,7 +136,7 @@ const ExpansionSystem = () => {
   ];
 
   return (
-    <section id="system" className="py-24 bg-slate-900 text-white overflow-hidden relative">
+    <section id="system" className="py-24 bg-navy text-white overflow-hidden relative">
       {/* Decorative background elements for better visibility */}
       <div className="absolute inset-0 bg-[radial-gradient(circle_at_30%_30%,rgba(10,31,143,0.4),transparent)] pointer-events-none" />
       <div className="absolute inset-0 bg-[radial-gradient(circle_at_70%_70%,rgba(242,125,38,0.1),transparent)] pointer-events-none" />
@@ -146,7 +146,7 @@ const ExpansionSystem = () => {
           <div>
             <h2 className="text-4xl lg:text-6xl font-display font-bold mb-8 leading-tight">
               The 5-Step <br />
-              <span className="text-pharma-accent drop-shadow-sm">Expansion System</span>
+              <span className="text-teal drop-shadow-sm">Expansion System</span>
             </h2>
             <p className="text-slate-300 text-lg mb-12 max-w-lg leading-relaxed">
               Humne pharma expansion ko ek science bana diya hai. Follow our system and watch your distributor network grow with precision.
@@ -154,7 +154,7 @@ const ExpansionSystem = () => {
             <div className="space-y-8">
               {steps.map((step, i) => (
                 <div key={i} className="flex items-start gap-6 group">
-                  <div className="w-12 h-12 rounded-2xl bg-white/5 border border-white/10 flex items-center justify-center font-bold text-pharma-accent group-hover:bg-pharma-accent group-hover:text-white group-hover:border-pharma-accent transition-all shrink-0 shadow-lg">
+                  <div className="w-12 h-12 rounded-2xl bg-white/5 border border-white/10 flex items-center justify-center font-bold text-teal group-hover:bg-teal group-hover:text-white group-hover:border-teal transition-all shrink-0 shadow-lg">
                     {i + 1}
                   </div>
                   <div>
@@ -247,10 +247,10 @@ const Pricing = () => {
   ];
 
   return (
-    <section id="pricing" className="py-24 bg-slate-50">
+    <section id="pricing" className="py-24 bg-light-bg">
       <div className="max-w-7xl mx-auto px-4">
         <div className="text-center mb-16">
-          <h2 className="text-4xl lg:text-5xl font-display font-bold text-slate-900 mb-4">Investment Plans</h2>
+          <h2 className="text-4xl lg:text-5xl font-display font-bold text-navy mb-4">Investment Plans</h2>
           <p className="text-slate-600 max-w-2xl mx-auto text-lg">
             Choose the plan that fits your expansion goals. No hidden fees.
           </p>
@@ -259,10 +259,10 @@ const Pricing = () => {
           {plans.map((plan, i) => (
             <div 
               key={i}
-              className={`relative p-8 rounded-[32px] border transition-all ${plan.popular ? 'bg-pharma-blue text-white shadow-2xl scale-105 border-pharma-blue' : 'bg-white text-slate-900 border-slate-200'}`}
+              className={`relative p-8 rounded-[32px] border transition-all ${plan.popular ? 'bg-navy text-white shadow-2xl scale-105 border-navy' : 'bg-white text-navy border-slate-200'}`}
             >
               {plan.popular && (
-                <div className="absolute -top-4 left-1/2 -translate-x-1/2 bg-pharma-accent text-white px-4 py-1 rounded-full text-xs font-bold uppercase tracking-widest">
+                <div className="absolute -top-4 left-1/2 -translate-x-1/2 bg-teal text-white px-4 py-1 rounded-full text-xs font-bold uppercase tracking-widest">
                   Most Popular
                 </div>
               )}
@@ -274,14 +274,14 @@ const Pricing = () => {
               <ul className="space-y-4 mb-10">
                 {plan.features.map((f, j) => (
                   <li key={j} className="flex items-center gap-3 text-sm">
-                    <CheckCircle2 className={`w-5 h-5 ${plan.popular ? 'text-pharma-accent' : 'text-green-500'}`} />
+                    <CheckCircle2 className={`w-5 h-5 ${plan.popular ? 'text-teal' : 'text-green-500'}`} />
                     {f}
                   </li>
                 ))}
               </ul>
               <Button 
                 variant={plan.popular ? "solid" : "outline"}
-                className={`w-full py-6 rounded-xl font-bold text-center block transition-all border-none ${plan.popular ? 'bg-white text-pharma-blue hover:bg-blue-50' : 'bg-pharma-blue text-white hover:shadow-lg'}`}
+                className={`w-full py-6 rounded-xl font-bold text-center block transition-all border-none ${plan.popular ? 'bg-white text-navy hover:bg-blue-50' : 'bg-navy text-white hover:shadow-lg'}`}
                 onClick={() => window.open(WHATSAPP_LINK, '_blank')}
               >
                 Choose Plan
@@ -305,10 +305,10 @@ const AboutUs = () => (
           className="space-y-8"
         >
           <div>
-            <h2 className="text-4xl lg:text-6xl font-display font-bold text-slate-900 mb-6 leading-tight">
-              About <span className="text-pharma-blue">Us</span>
+            <h2 className="text-4xl lg:text-6xl font-display font-bold text-navy mb-6 leading-tight">
+              About <span className="text-navy">Us</span>
             </h2>
-            <div className="h-1.5 w-24 bg-pharma-accent rounded-full mb-8" />
+            <div className="h-1.5 w-24 bg-teal rounded-full mb-8" />
             <p className="text-slate-600 text-lg leading-relaxed mb-6">
               Torrent Pharma Marketing Services was built to solve a real problem in the pharmaceutical industry.
             </p>
@@ -324,7 +324,7 @@ const AboutUs = () => (
           </div>
 
           <div className="bg-slate-50 p-8 rounded-[32px] border border-slate-100">
-            <h3 className="text-2xl font-display font-bold text-slate-900 mb-4">Founder’s Story</h3>
+            <h3 className="text-2xl font-display font-bold text-navy mb-4">Founder’s Story</h3>
             <p className="text-slate-700 font-bold mb-4">I’m Waqar Ali, the founder of Torrent Pharma Marketing Services.</p>
             <p className="text-slate-600 mb-4">
               With over 17 years of experience in the pharmaceutical industry and 6+ years in e-commerce and digital marketing, I’ve worked on both sides of the business — field sales and digital growth.
@@ -334,7 +334,7 @@ const AboutUs = () => (
             </p>
             <div className="flex flex-wrap gap-2">
               {['Respiratory', 'Psychiatry', 'Medicine', 'Pediatrics', 'Surgery'].map(spec => (
-                <span key={spec} className="px-3 py-1 bg-pharma-blue/5 text-pharma-blue text-xs font-bold rounded-full border border-pharma-blue/10">
+                <span key={spec} className="px-3 py-1 bg-navy/5 text-navy text-xs font-bold rounded-full border border-navy/10">
                   {spec}
                 </span>
               ))}
@@ -349,14 +349,14 @@ const AboutUs = () => (
           className="space-y-8"
         >
           <div className="glass-card p-8 rounded-[40px] border-slate-200 shadow-xl">
-            <h3 className="text-2xl font-display font-bold text-pharma-blue mb-6">From Field Experience to Digital Expansion</h3>
+            <h3 className="text-2xl font-display font-bold text-navy mb-6">From Field Experience to Digital Expansion</h3>
             <p className="text-slate-600 mb-6 leading-relaxed">
               During COVID, I launched my own company, Torrent Pharma, as a KPK-based franchise operation. While working with multiple pharmaceutical companies — including Doctor Raza Pharma, Polyfine Pharma, Nicholas Pharma, Shazals Pharma, Rogen Pharma, Perk Pharma, Origin Pharma, and many others — I realized something important:
             </p>
-            <p className="text-pharma-accent font-bold text-xl mb-8 italic">
+            <p className="text-teal font-bold text-xl mb-8 italic">
               "The traditional model of expansion is outdated."
             </p>
-            <div className="p-6 bg-pharma-blue text-white rounded-3xl">
+            <div className="p-6 bg-navy text-white rounded-3xl">
               <p className="text-sm leading-relaxed">
                 So I combined my pharma experience with my digital marketing knowledge — and built a system that generates qualified franchisers through social media instead of physical fieldwork.
               </p>
@@ -365,11 +365,11 @@ const AboutUs = () => (
 
           <div className="grid grid-cols-2 gap-4">
             <div className="p-6 bg-slate-50 rounded-3xl border border-slate-100">
-              <p className="text-3xl font-bold text-pharma-blue mb-1">1000+</p>
+              <p className="text-3xl font-bold text-navy mb-1">1000+</p>
               <p className="text-xs text-slate-500 font-bold uppercase tracking-wider">Pharma Contacts</p>
             </div>
             <div className="p-6 bg-slate-50 rounded-3xl border border-slate-100">
-              <p className="text-3xl font-bold text-pharma-blue mb-1">10+</p>
+              <p className="text-3xl font-bold text-navy mb-1">10+</p>
               <p className="text-xs text-slate-500 font-bold uppercase tracking-wider">Team Professionals</p>
             </div>
           </div>
@@ -474,7 +474,7 @@ const Results = () => {
 };
 
 const Footer = () => (
-  <footer className="bg-slate-900 text-white pt-20 pb-10">
+  <footer className="bg-navy text-white pt-20 pb-10">
     <div className="max-w-7xl mx-auto px-4">
       <div className="grid md:grid-cols-4 gap-12 mb-16">
         <div className="col-span-2">
@@ -486,11 +486,11 @@ const Footer = () => (
           </p>
           <div className="space-y-3 mb-8">
             <div className="flex items-start gap-3 text-slate-400">
-              <MapPin className="w-5 h-5 text-pharma-accent shrink-0 mt-1" />
+              <MapPin className="w-5 h-5 text-teal shrink-0 mt-1" />
               <span>Office 6 B, Royal Residencia, Darmangi Garden street 2, Warsak Road Peshawar</span>
             </div>
             <div className="flex items-center gap-3 text-slate-400">
-              <PhoneCall className="w-5 h-5 text-pharma-accent" />
+              <PhoneCall className="w-5 h-5 text-teal" />
               <span>+92 306 5904574</span>
             </div>
           </div>
@@ -499,7 +499,7 @@ const Footer = () => (
               href="https://www.facebook.com/Torrentpharmapakistan" 
               target="_blank" 
               rel="noopener noreferrer"
-              className="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center hover:bg-pharma-accent transition-colors"
+              className="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center hover:bg-teal transition-colors"
             >
               <Facebook className="w-5 h-5" />
             </a>
@@ -507,7 +507,7 @@ const Footer = () => (
               href="https://www.instagram.com/torrentpharma.pk/" 
               target="_blank" 
               rel="noopener noreferrer"
-              className="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center hover:bg-pharma-accent transition-colors"
+              className="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center hover:bg-teal transition-colors"
             >
               <Instagram className="w-5 h-5" />
             </a>
@@ -549,11 +549,11 @@ export default function LandingPage() {
       <Pricing />
       <Results />
       
-      <section className="py-24 bg-slate-950">
+      <section className="py-24 bg-light-bg">
         <div className="max-w-7xl mx-auto px-4">
           <div className="text-center mb-12">
-            <h2 className="text-3xl font-display font-bold text-white mb-4">Ask Our AI Assistant</h2>
-            <p className="text-slate-400">Have questions about pharma expansion? Our AI is here to help.</p>
+            <h2 className="text-3xl font-display font-bold text-navy mb-4">Ask Our AI Assistant</h2>
+            <p className="text-navy/60">Have questions about pharma expansion? Our AI is here to help.</p>
           </div>
           <AnimatedAIChat />
         </div>
